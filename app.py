@@ -43,7 +43,7 @@ traffic_state = {
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://sns-khaki.vercel.app/"],  # React app
+    allow_origins=["*"],  # React app
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
